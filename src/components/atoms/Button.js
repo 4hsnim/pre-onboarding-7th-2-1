@@ -7,8 +7,7 @@ const Button = styled.button`
   border: none;
   background-color: ${({ theme }) => theme.btnColor.default};
   color: ${({ theme }) => theme.txtColor.default};
-  font-size: 14px;
-  font-weight: 700;
+  ${({ theme }) => theme.fontStyles.button1}
   cursor: pointer;
 
   ${({ filtered }) =>
@@ -24,7 +23,7 @@ const Button = styled.button`
       width: 3.3rem;
       background-color: ${({ theme }) => theme.btnColor.accent};
       color: ${({ theme }) => theme.txtColor.accent};
-      font-size: 12px;
+      ${({ theme }) => theme.fontStyles.button2}
       cursor: default;
     `}
 `;

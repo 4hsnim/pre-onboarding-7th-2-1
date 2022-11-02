@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
+  ${({ theme }) => theme.fontStyles.title2}
   width: 100%;
   height: 60px;
   position: sticky;

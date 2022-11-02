@@ -3,6 +3,8 @@ import styled, { css } from "styled-components";
 const Button = styled.button`
   width: 4rem;
   height: 27px;
+  margin-left: 8px;
+  margin-top: 6px;
   border-radius: 4rem;
   border: none;
   background-color: ${({ theme }) => theme.btnColor.default};

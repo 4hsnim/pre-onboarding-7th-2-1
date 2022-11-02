@@ -1,5 +1,32 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const Button = styled.button``;
+const Button = styled.button`
+  width: 4rem;
+  height: 27px;
+  border-radius: 4rem;
+  border: none;
+  background-color: ${({ theme }) => theme.btnColor.default};
+  color: ${({ theme }) => theme.txtColor.default};
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+
+  ${({ filtered }) =>
+    filtered &&
+    css`
+      background-color: ${({ theme }) => theme.btnColor.filtered};
+      color: ${({ theme }) => theme.txtColor.accent};
+    `}
+
+  ${({ recent }) =>
+    recent &&
+    css`
+      width: 3.3rem;
+      background-color: ${({ theme }) => theme.btnColor.accent};
+      color: ${({ theme }) => theme.txtColor.accent};
+      font-size: 12px;
+      cursor: default;
+    `}
+`;
 
 export default Button;

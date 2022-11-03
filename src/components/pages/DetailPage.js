@@ -1,7 +1,11 @@
 import React from "react";
-
+import Template from "../templates/Template";
 const DetailPage = () => {
-  return <div>DetailPage</div>;
+  return (
+    <>
+      <Template></Template>
+    </>
+  );
 };
 
 export default DetailPage;

@@ -5,9 +5,11 @@ const GlobalStyle = createGlobalStyle`
     ${reset}
     * {
         box-sizing: border-box;
-        font-family: 'Inter',sans-serif;
-
     }
+    body{
+        font-family: 'Inter',sans-serif;
+    }
+
     a {
         text-decoration: none;
     }

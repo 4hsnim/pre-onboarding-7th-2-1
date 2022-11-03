@@ -3,9 +3,11 @@ import Filter from "./Filter";
 import MainNav from "./MainNav";
 import CarItem from "./CarItem";
 
-export default {
+const molecules = {
   DetailNav,
   Filter,
   MainNav,
   CarItem,
 };
+
+export default molecules;

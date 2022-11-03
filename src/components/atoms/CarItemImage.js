@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-const CarItemImage = styled.div`
+console.log();
+
+const CarItemImage = styled.img`
   width: 9.5rem;
   height: 5rem;
-  background-color: ${({ theme }) => theme.btnColor.default};
+  /* background-image: url(${({ imageUrl }) => imageUrl}); */
 `;
 
 export default CarItemImage;

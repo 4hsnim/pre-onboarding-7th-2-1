@@ -13,7 +13,7 @@ import Title1 from "./Title1";
 import Title2 from "./Title2";
 import Title3 from "./Title3";
 
-export default {
+const atoms = {
   Body1,
   Body2,
   Button,
@@ -29,3 +29,5 @@ export default {
   Title2,
   Title3,
 };
+
+export default atoms;
